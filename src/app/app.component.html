@@ -1,3 +1,7 @@
 <!-- Llamamos a nuestro componente img-->
+<!--componente img-->
 <p><input type="text" [(ngModel)]="imgParent"/></p>
 <app-img [img]="imgParent"></app-img>
+<!--componente product-->
+<!--app componente + valor inicial + ngFor(htmlfor como en react)-->
+<app-product [product]="product" *ngFor="let product of products"></app-product>
