@@ -2,7 +2,7 @@
   <span class="product--title">{{ product.title }}</span>
   <p class="product--id">Product id: {{product.id}}</p>
   <app-img [imgSrc]="product.image"></app-img>
-  <p class="product--price">Price: {{product.price | currency:'USD'}}</p>
+  <p class="product--price">Price: {{product.price | currency:'€'}}</p>
 
   <button class="button-shoppingcart"
     (click)="onAddShoppingCart()">
