@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 //importar mi componente
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ImgComponent } from './components/img/img.component';
 
 @NgModule({
   //importar los componentes
   declarations: [
     AppComponent,
     ProductComponent,
-    ProductsComponent
+    ProductsComponent,
+    ImgComponent
   ],
   imports: [
     BrowserModule,
