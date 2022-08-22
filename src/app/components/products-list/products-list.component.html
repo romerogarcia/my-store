@@ -1,0 +1,16 @@
+<p>Fecha: {{today | timeAgo}}</p>
+<h1>Productos del carrito</h1>
+<p>Productos en carrito: {{userProducts.length}}</p>
+<p>Total a pagar: {{total | currency:'USD'}}</p>
+<br>
+
+
+<h1>Catálogo de productos</h1>
+<div class="products--grid">
+  <app-product
+    appHighlight
+    [product]="product"
+    *ngFor="let product of productArray"
+    (addedProduct)="onAddtoShoppingCart($event)"
+    ></app-product>
+</div>

@@ -10,5 +10,3 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
-
-  //DONDE SE CARGAN TODOS LOS COMPONENTES Y EL MODULO PRINCIPAL

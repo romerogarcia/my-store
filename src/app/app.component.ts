@@ -1,16 +1,23 @@
-/////////MODULO PRINCIPAL MODULO QUE SE ENCARGA DE CARGAR LOS PRINCIPALES COMPONENTES
 import { Component } from '@angular/core';
-import { Product} from './models/product.model';
 
-//decorador -> caracteristicas que tine el componente, con la etiqueta(selector), que se muestra(template) y los estilos
+import { Product } from './models/product.model'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
-
-//importamos los componentes 
 export class AppComponent {
-  imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
- 
+  public showImg: boolean = true;
+  public title = 'angular-my-store';
+  public imgFromFather: string = ''; //https://www.w3schools.com/howto/img_avatar.png
+  
+
+
+  onLoadedImg(img: string) {
+    console.log(img);
+  }
+
+  toggleImg() {
+    this.showImg = !this.showImg;
+  }
 }
