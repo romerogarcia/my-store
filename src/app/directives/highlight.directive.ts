@@ -13,6 +13,7 @@ export class HighlightDirective {
     this.element.nativeElement.style.backgroundColor = '';
   }
 
+  //al elemento que le apliquemos la directiva de ElementRef su acceso para poder hacerle modificaciones (cambiar estilos, añadir algo al html..)
   constructor(private element: ElementRef) {}
 
 }

@@ -19,12 +19,14 @@ export class ProductsListComponent implements OnInit {
   public userProducts: Product[] = [];
 
   public productArray: Product[] = [];
-
+//soreservice para manejar el pedido
+//productsservice para traer la info de los productos
   constructor(
     private storeService: StoreServiceService,
     private productsService: ProductsService
   ) { }
-
+//quiero traer estos datos
+//suscribe() para traer la info
   ngOnInit() {
     this.userProducts = this.storeService.getCartProducts();
     this.productsService.getProducts().subscribe((productList: Product[]) => {
