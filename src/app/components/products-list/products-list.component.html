@@ -1,11 +1,11 @@
-<p>Fecha: {{today | timeAgo}}</p>
-<h1>Productos del carrito</h1>
-<p>Productos en carrito: {{userProducts.length}}</p>
-<p>Total a pagar: {{total | currency:'USD'}}</p>
+<p class="date">Fecha: {{today | timeAgo}}</p>
+<h1 class="product">Productos del carrito</h1>
+<p class="products">Productos en carrito: {{userProducts.length}}</p>
+<p class="pay">Total a pagar: {{total | currency:'€'}}</p>
 <br>
 
 
-<h1>Catálogo de productos</h1>
+<h1 class="listproducts">Catálogo de productos</h1>
 <div class="products--grid">
   <app-product
     appHighlight

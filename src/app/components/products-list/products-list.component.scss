@@ -1,8 +1,32 @@
 .products--grid{
   display: flex;
   flex-direction: column;
+  margin:20px;
+}
+.date{
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
+.product{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.products{
+  margin-left: 20px;
+}
+
+.pay{
+  margin-left: 20px;
+}
+
+.listproducts{
+  margin-left: 20px;
+}
+
+//medias
 @media screen and (min-width: 40em) and (max-width: 63.9em) {
   .products--grid{
     display: grid;
