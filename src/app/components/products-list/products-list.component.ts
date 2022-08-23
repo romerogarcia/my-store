@@ -32,7 +32,7 @@ export class ProductsListComponent implements OnInit {
       console.log(productList);
     });
   }
-
+//ecuchar evento añadir producto
   onAddtoShoppingCart(product: Product) {
     this.storeService.onAddtoShoppingCart(product);
     this.total = this.storeService.getTotal();

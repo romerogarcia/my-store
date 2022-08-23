@@ -17,14 +17,16 @@ export class ProductComponent implements OnInit {
     description: '',
     category: ''
   };
-
+//trasmitir información a product
+//EventEmitter es un módulo que ayuda a compartir datos entre componentes usando los métodos emit() y subscribe()
   @Output() addedProduct = new EventEmitter<Product>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+//evento click
+//emit() es un método EventEmitter que emite un evento que contiene un valor dado.
   onAddShoppingCart() {
     this.addedProduct.emit(this.product);
   }
