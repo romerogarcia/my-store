@@ -14,6 +14,7 @@ import { StringReversePipe } from './pipes/stringReverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { NumberVowelsPipe } from './pipes/number-vowels.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     StringReversePipe,
     TimeAgoPipe,
     NumberVowelsPipe,
-    HighlightDirective
+    HighlightDirective,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,
