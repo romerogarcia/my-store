@@ -1,16 +1,18 @@
+<section>
 
-<h1 class="product">Productos del carrito</h1>
-<p class="products">Productos en carrito: {{userProducts.length}}</p>
-<p class="pay">Total a pagar: {{total | currency:'€'}}</p>
-<br>
+<div class="topay">
+  <p class="products">Products in cart: {{userProducts.length}}</p>
+<p class="pay">Total to pay: {{total | currency:'€'}}</p>
+</div>
 
+</section>
 
-<h1 class="listproducts">Catálogo de productos</h1>
-<div class="products--grid">
+<h1 class="listproducts">Product Catalog</h1>
+<section class="products--grid">
   <app-product
     appHighlight
     [product]="product"
     *ngFor="let product of productArray"
     (addedProduct)="onAddtoShoppingCart($event)"
     ></app-product>
-</div>
+</section>

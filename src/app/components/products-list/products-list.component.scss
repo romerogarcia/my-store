@@ -3,26 +3,46 @@
   flex-direction: column;
   margin:20px;
 }
-.date{
-  margin-top: 20px;
-  margin-left: 20px;
+
+.section{
+  display: flex;
+  
 }
 
-.product{
+.topay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+  }
+ 
 }
 
 .products{
   margin-left: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(173,216,179	);
 }
 
 .pay{
   margin-left: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.301);
 }
 
 .listproducts{
+  margin-top: 10px;
   margin-left: 20px;
 }
 
