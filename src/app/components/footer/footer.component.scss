@@ -12,9 +12,9 @@ footer {
     flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 56px;
+      margin-top: 30px;
       padding-top: 10px;
-      padding-bottom: 50px;
+      padding-bottom: 30px;
     
       @media all and (min-width: 768px) {
       flex-direction: row;
@@ -39,8 +39,14 @@ footer {
           font-size: 14px;
           color: black;
           list-style: none;
-          text-decoration: none;
-          margin-bottom: 10px;
-        }
-      
-    
+          text-decoration: none;     
+}
+ 
+.li{
+    margin-bottom: 5px;
+}
+.pnav{
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}    
