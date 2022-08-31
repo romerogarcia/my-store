@@ -11,8 +11,6 @@ export class AppComponent {
   public title = 'angular-my-store';
   public imgFromFather: string = ''; //https://www.w3schools.com/howto/img_avatar.png
   
-
-
   onLoadedImg(img: string) {
     console.log(img);
   }
